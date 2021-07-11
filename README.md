@@ -1,1 +1,1 @@
-# Amazon interview coding problems
+# Interview coding problems
