@@ -12,7 +12,7 @@ import java.util.Deque;
  * 为了实现O(n)的复杂度，我们需要建立并维护一个单调递减的队列，我们称之为queue，来记录 window 中所有可能成为最大值的元素。queue中只保存元素序号，而不是实际的值
  * 当window的最右端滑动到序号i时，nums[i]将进入window。在此之前，我们需要做两件事：
  *  1。 检查queue最左边的元素是否已经移出window范围，如果是的，将queue最左边的元素remove
- *  2。 检查queue最右边的元素是否小于nums[i]，如果是的话就remove，然后重复这一步，直到最右边的元素大于nums[i]位置
+ *  2。 检查queue最右边的元素是否小于nums[i]，如果是的话就remove，然后重复这一步，直到最右边的元素大于nums[i]为止
  * 之后，我们便可以把nums[i]加入到queue的最右边了。queue最左边的元素即为此时刻 window 中最大的元素，也就是答案。
  *
  * 这样做的原理：假如我们的window接触到一个新的元素nums[i]，它大于window中的一部分元素。那么那一部分元素在nums[i]被移出window之前没有可能成为最大值。

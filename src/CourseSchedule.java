@@ -9,7 +9,7 @@ import java.util.*;
 // For example, the pair [0, 1], indicates that to take course 0 you have to first take course 1.
 // Return true if you can finish all courses. Otherwise, return false.
 
-// 重点就是检查课程的依赖关系图中有没有圈，没有的话，就可以完成，有圈就没洗了（比如 1 需要 2， 2 需要 3， 3 需要 1）。
+// 重点就是检查课程的依赖关系图中有没有圈，没有的话，就可以完成，有圈就没戏了（比如 1 需要 2， 2 需要 3， 3 需要 1）。
 //
 
 class CourseSchedule {
